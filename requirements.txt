@@ -1,3 +1,8 @@
-fastapi
+fastapi[standard]
+uvicorn
 httpx
-peewee
+sqlmodel
+python-dotenv
+requests
+pytest
+pbcore-develop.zip
