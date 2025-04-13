@@ -33,6 +33,5 @@ if not os.path.exists(app.STAGING_ROOT):
     abort(f"Staging root directory '{app.STAGING_ROOT}' specified in .env file does not exist.")
 
 # initialize and run the app
-if __name__ == "__main__":
-    reload = "--reload" in sys.argv
-    uvicorn.run("endpoints:FASTAPI", host="127.0.0.1", port=8000, reload=reload)
+reload = "--reload" in sys.argv
+uvicorn.run("endpoints:FASTAPI", host="127.0.0.1", port=8000, reload=reload)
