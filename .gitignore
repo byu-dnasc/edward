@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .env
 venv*
+nginx.conf
+nginx.pid
+*.log
+index.html
